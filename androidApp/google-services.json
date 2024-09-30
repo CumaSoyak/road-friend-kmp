@@ -1,0 +1,101 @@
+{
+  "project_info": {
+    "project_number": "1052592609024",
+    "firebase_url": "https://roadfriend-10e81.firebaseio.com",
+    "project_id": "roadfriend-10e81",
+    "storage_bucket": "roadfriend-10e81.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1052592609024:android:7d381661ece41d9a2c45e5",
+        "android_client_info": {
+          "package_name": "roadfriend.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1052592609024-cnfq1h1v1m6e8lea3bemnte0rpmpbd5r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "roadfriend.app",
+            "certificate_hash": "395a3342a69d83c2f2a57b49d24147b74010d052"
+          }
+        },
+        {
+          "client_id": "1052592609024-in0umclrhk5714rjpassstc0dbf8078h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "roadfriend.app",
+            "certificate_hash": "97703d830706ec4fcb617d46bb17560d3e0943cf"
+          }
+        },
+        {
+          "client_id": "1052592609024-qdpahgka2t7bsd6fn1ht3tf6l7tdpuog.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "roadfriend.app",
+            "certificate_hash": "ec073910f2ada1ac077d4dfdb362e1bb4026d2c4"
+          }
+        },
+        {
+          "client_id": "1052592609024-sfut0g1t1hpnvi1vieim3lp96chd0brh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2iB4YMsbS5MExON-tdkmjYWh7eH3l9YY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1052592609024-sfut0g1t1hpnvi1vieim3lp96chd0brh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1052592609024:android:c7c3699474f6b1042c45e5",
+        "android_client_info": {
+          "package_name": "roadfriend.app.develop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1052592609024-5ic2lkui7romnu9v6jnf23aqd1naoeja.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "roadfriend.app.develop",
+            "certificate_hash": "97703d830706ec4fcb617d46bb17560d3e0943cf"
+          }
+        },
+        {
+          "client_id": "1052592609024-sfut0g1t1hpnvi1vieim3lp96chd0brh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2iB4YMsbS5MExON-tdkmjYWh7eH3l9YY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1052592609024-sfut0g1t1hpnvi1vieim3lp96chd0brh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
