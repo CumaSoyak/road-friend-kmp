@@ -28,6 +28,7 @@ kotlin {
 
     sourceSets {
         commonMain.dependencies {
+            implementation(project(":uikit"))
             implementation(libs.uikit.compose)
             implementation(libs.uikit.resources)
 

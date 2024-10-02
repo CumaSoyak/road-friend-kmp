@@ -17,3 +17,4 @@ dependencyResolutionManagement {
 rootProject.name = "road-friend-kmp"
 include(":androidApp")
 include(":shared")
+include(":uikit")
