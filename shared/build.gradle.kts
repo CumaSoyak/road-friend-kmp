@@ -29,8 +29,9 @@ kotlin {
     sourceSets {
         commonMain.dependencies {
             implementation(project(":uikit"))
-            implementation(libs.uikit.compose)
-            implementation(libs.uikit.resources)
+
+            api(libs.koin.core)
+            implementation(libs.koin.compose)
 
             implementation(compose.runtime)
             implementation(compose.foundation)
@@ -38,6 +39,19 @@ kotlin {
             implementation(compose.ui)
             implementation(compose.components.resources)
             implementation(compose.components.uiToolingPreview)
+            implementation(compose.materialIconsExtended)
+            implementation(libs.kotlinX.serializationJson)
+            implementation(libs.material3.window.size.multiplatform)
+            implementation(libs.coroutines.extensions)
+            implementation(libs.primitive.adapters)
+
+            api(libs.multiplatformSettings.noArg)
+            api(libs.multiplatformSettings.coroutines)
+
+            implementation(libs.androidx.lifecycle.viewmodel.compose)
+            implementation(libs.androidx.navigation.compose)
+
+
 
         }
         androidMain.dependencies {
@@ -62,10 +76,32 @@ kotlin {
             implementation(libs.firebase.crashlytics)
             implementation(libs.koin.core)
 
+            implementation(libs.koin.android)
+            implementation(libs.koin.androidx.compose)
+            implementation(libs.accompanist.systemUIController)
+
 
 
         }
+        jvmMain.dependencies {
+
+            implementation(libs.kotlinx.coroutines.swing)
+
+            // JNA for Linux
+            implementation("de.jangassen:jfa:1.2.0") {
+                // not excluding this leads to a strange error during build:
+                // > Could not find jna-5.13.0-jpms.jar (net.java.dev.jna:jna:5.13.0)
+                exclude(group = "net.java.dev.jna", module = "jna")
+            }
+
+          }
         iosMain.dependencies {
+            @OptIn(org.jetbrains.compose.ExperimentalComposeLibrary::class)
+            implementation(compose.components.resources)
+            implementation(compose.ui)
+            implementation(compose.foundation)
+            implementation(compose.material)
+
 
         }
     }

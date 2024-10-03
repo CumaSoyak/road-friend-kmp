@@ -19,6 +19,8 @@ allprojects {
         maven("https://jitpack.io")
         maven("https://developer.huawei.com/repo/")
         mavenLocal { url = uri("${rootDir}/repos") }
+        maven("https://maven.pkg.jetbrains.space/public/p/compose/dev")
+
         maven {
             isAllowInsecureProtocol = true
             setUrl("http://172.35.21.183:8081/repository/tom-mobile/")

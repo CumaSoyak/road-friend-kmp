@@ -8,7 +8,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import roadfriend.app.uikit.CumaTextView
 
 @Composable
 fun ErrorScreen(message: String? = null) {
@@ -19,6 +18,5 @@ fun ErrorScreen(message: String? = null) {
         contentAlignment = Alignment.Center
     ) {
         Text(text = message ?: "Empty")
-        CumaTextView()
     }
 }
