@@ -1,4 +1,4 @@
-package roadfriend.app.feature
+package roadfriend.app.feature.home
 
 /**
  * @Author: cuma soyak
