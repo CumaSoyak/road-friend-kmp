@@ -31,29 +31,36 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import kotlinx.coroutines.launch
+import roadfriend.app.base.BaseComposableScreen
+import roadfriend.app.feature.home.HomeViewModel
 import roadfriend.app.presentation.navigation.Destinations
+import roadfriend.app.utils.koinViewModel
 
 @Composable
 fun OnboardingScreen(
-    navController: NavController,
+    vM: HomeViewModel = koinViewModel(),
+    navController: NavController
 ) {
-    val coroutineScope = rememberCoroutineScope()
-    val pageCount = 3
-    val pagerState = rememberPagerState(pageCount = { pageCount })
+    BaseComposableScreen(vM) { state, event ->
+        val coroutineScope = rememberCoroutineScope()
+        val pageCount = 3
+        val pagerState = rememberPagerState(pageCount = { pageCount })
 
-    OnboardingScreenContent(
-        pagerState = pagerState,
-        pageCount = pageCount,
-        onClickNext = {
-            coroutineScope.launch {
-                pagerState.animateScrollToPage(pagerState.currentPage + 1)
-            }
-        },
-        onClickGetStarted = {
-            navController.popBackStack()
-            navController.navigate(Destinations.Home)
-        },
-    )
+        OnboardingScreenContent(
+            pagerState = pagerState,
+            pageCount = pageCount,
+            onClickNext = {
+                coroutineScope.launch {
+                    pagerState.animateScrollToPage(pagerState.currentPage + 1)
+                }
+            },
+            onClickGetStarted = {
+                navController.popBackStack()
+                navController.navigate(Destinations.Home)
+            },
+        )
+    }
+
 }
 
 @Composable

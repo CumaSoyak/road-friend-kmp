@@ -4,6 +4,29 @@ package roadfriend.app.feature.home
  * @Author: cuma soyak
  * @Date: 3.10.2024
  */
-import androidx.lifecycle.ViewModel
-class HomeViewModel: ViewModel() {
+import roadfriend.app.base.TBViewModel
+
+class HomeViewModel : TBViewModel<HomeCR.State, HomeCR.Event>() {
+
+    override fun setInitialState(): HomeCR.State {
+        return HomeCR.State()
+    }
+
+    override fun onTriggerEvent(event: HomeCR.Event) {
+        when (event) {
+            HomeCR.Event.ReloadData -> {
+                println("HomeCR.Event.ReloadData")
+
+                setState {
+                    copy(
+                        isPassbookActive = "Cumaaa"
+                    )
+                }
+            }
+        }
+
+    }
+
+
+
 }

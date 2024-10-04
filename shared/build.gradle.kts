@@ -29,6 +29,7 @@ kotlin {
     sourceSets {
         commonMain.dependencies {
             implementation(project(":uikit"))
+            implementation(project(":extension"))
 
             api(libs.koin.core)
             implementation(libs.koin.compose)
