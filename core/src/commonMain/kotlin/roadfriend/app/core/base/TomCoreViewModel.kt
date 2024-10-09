@@ -1,4 +1,4 @@
-package roadfriend.app.base
+package roadfriend.app.core.base
 
 import androidx.core.bundle.Bundle
 import androidx.lifecycle.ViewModel

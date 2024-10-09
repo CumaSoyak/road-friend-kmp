@@ -183,15 +183,15 @@ object Libs {
 
     object UIKit {
         private const val version = "1.0.0"
-        const val Compose = "com.tom.uikit:uikit-compose:$version"
-        const val Resources = "com.tom.uikit:uikit-resources:$version"
+        const val Compose = "roadfriend.app.uikit:uikit-compose:$version"
+        const val Resources = "roadfriend.app.uikit:uikit-resources:$version"
     }
 
     object TomBank {
         object Extension {
             private const val version = "1.0.5"
-            const val Core = "com.tombank.extension:core:$version"
-            const val Compose = "com.tombank.extension:compose:$version"
+            const val Core = "roadfriend.appbank.extension:core:$version"
+            const val Compose = "roadfriend.appbank.extension:compose:$version"
         }
     }
 }

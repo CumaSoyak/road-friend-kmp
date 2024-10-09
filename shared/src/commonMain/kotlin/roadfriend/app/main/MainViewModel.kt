@@ -1,7 +1,7 @@
 package roadfriend.app.main
 
-import androidx.lifecycle.ViewModel
-import roadfriend.app.base.TBViewModel
+
+import roadfriend.app.core.base.TBViewModel
 import roadfriend.app.feature.home.HomeCR
 
 class MainViewModel : TBViewModel<HomeCR.State, HomeCR.Event>()  {

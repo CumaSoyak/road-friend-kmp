@@ -1,12 +1,10 @@
-package roadfriend.app.base
+package roadfriend.app.core.base
 
-import androidx.navigation.NavHostController
 import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update
-import roadfriend.app.presentation.navigation.Destinations
 
 abstract class TomStateViewModel<STATE, EVENT> : TomCoreViewModel() {
 

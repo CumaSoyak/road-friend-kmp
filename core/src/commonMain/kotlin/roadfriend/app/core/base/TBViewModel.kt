@@ -1,4 +1,4 @@
-package roadfriend.app.base
+package roadfriend.app.core.base
 
 abstract class TBViewModel<STATE, EVENT> : TomStateViewModel<STATE, EVENT>() {
 

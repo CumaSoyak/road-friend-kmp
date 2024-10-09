@@ -32,6 +32,7 @@ androidDriver = "2.0.2"
 multiplatformSettings = "1.1.1"
 kotlinxCoroutinesSwing = "1.8.1"
 accompanist-systemUIController = "0.34.0"
+ktor_client = "2.3.12"
 
 
 
@@ -45,8 +46,8 @@ compose-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview"
 compose-foundation = { module = "androidx.compose.foundation:foundation", version.ref = "compose" }
 compose-material3 = { module = "androidx.compose.material3:material3", version.ref = "compose-material3" }
 compose-material = { module = "com.google.android.material:material", version.ref = "compose-material" }
-uikit-compose = { module = "com.tom.uikit:uikit-compose", version.ref = "uikit" }
-uikit-resources = { module = "com.tom.uikit:uikit-resources", version.ref = "uikit" }
+uikit-compose = { module = "roadfriend.app.uikit:uikit-compose", version.ref = "uikit" }
+uikit-resources = { module = "roadfriend.app.uikit:uikit-resources", version.ref = "uikit" }
 
 
 koin-android = { module = "io.insert-koin:koin-android", version.ref = "koin" }
@@ -80,6 +81,15 @@ primitive-adapters = { module = "app.cash.sqldelight:primitive-adapters", versio
 multiplatformSettings-noArg = { module = "com.russhwolf:multiplatform-settings-no-arg", version.ref = "multiplatformSettings" }
 multiplatformSettings-coroutines = { module = "com.russhwolf:multiplatform-settings-coroutines", version.ref = "multiplatformSettings" }
 accompanist-systemUIController = { module = "com.google.accompanist:accompanist-systemuicontroller", version.ref = "accompanist-systemUIController" }
+
+
+ktor-client-core = { module = "io.ktor:ktor-client-core", version.ref = "ktor_client" }
+ktor-client-okhttp = { module = "io.ktor:ktor-client-okhttp", version.ref = "ktor_client" }
+ktor-client-darwin = { module = "io.ktor:ktor-client-darwin", version.ref = "ktor_client" }
+ktor-client-content-negotiation = { module = "io.ktor:ktor-client-content-negotiation", version.ref = "ktor_client" }
+ktor-serialization-kotlinx-json = { module = "io.ktor:ktor-serialization-kotlinx-json", version.ref = "ktor_client" }
+ktor-client-logging = { module = "io.ktor:ktor-client-logging", version.ref = "ktor_client" }
+ktor-client-websockets = { module = "io.ktor:ktor-client-websockets", version.ref = "ktor_client" }
 
 
 

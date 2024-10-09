@@ -30,6 +30,7 @@ kotlin {
         commonMain.dependencies {
             implementation(project(":uikit"))
             implementation(project(":extension"))
+            implementation(project(":core"))
 
             api(libs.koin.core)
             implementation(libs.koin.compose)

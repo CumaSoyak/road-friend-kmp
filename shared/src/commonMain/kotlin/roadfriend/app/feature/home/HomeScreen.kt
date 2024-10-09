@@ -8,7 +8,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.navigation.NavController
-import roadfriend.app.base.BaseComposableScreen
+import roadfriend.app.core.base.BaseComposableScreen
 import roadfriend.app.presentation.navigation.Destinations
 import roadfriend.app.uikit.compose.texts.TomTexts
 import roadfriend.app.uikit.compose.texts.clickable.TomClickableText

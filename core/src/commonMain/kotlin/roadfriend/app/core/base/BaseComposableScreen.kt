@@ -1,4 +1,4 @@
-package roadfriend.app.base
+package roadfriend.app.core.base
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
