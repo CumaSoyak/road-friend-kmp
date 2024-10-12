@@ -22,7 +22,7 @@ fun TomCheckClickableText(
     checked: Boolean,
     prefixText: String,
     allText: String,
-    prefixTextColor: Color = TomTheme.colors.textPurple,
+    prefixTextColor: Color = TomTheme.colors.disabledColor,
     allTextColor: Color = TomTheme.colors.textSecondary,
     isUnderline: Boolean = false,
     fontFamily: FontFamily = montserrat(),

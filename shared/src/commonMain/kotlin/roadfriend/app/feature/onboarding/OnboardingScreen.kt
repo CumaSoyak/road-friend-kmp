@@ -32,7 +32,7 @@ import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import kotlinx.coroutines.launch
 import roadfriend.app.core.base.BaseComposableScreen
-import roadfriend.app.feature.home.HomeViewModel
+import roadfriend.app.feature.bottommenu.home.HomeViewModel
 import roadfriend.app.presentation.navigation.Destinations
 import roadfriend.app.utils.koinViewModel
 

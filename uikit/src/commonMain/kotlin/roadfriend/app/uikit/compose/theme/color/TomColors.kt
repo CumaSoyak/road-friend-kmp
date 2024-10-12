@@ -1,104 +1,74 @@
 @file:Suppress("MagicNumber")
+
 package roadfriend.app.uikit.compose.theme.color
 
+import androidx.compose.material3.ColorScheme
+import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Immutable
 import androidx.compose.ui.graphics.Color
 
 @Immutable
 data class TomColors(
-    val hadiPrimary: Color,
-    val hadiPrimaryLight: Color,
-    val hadiLight: Color,
-    val backgroundPrimary: Color,
-    val backgroundSecondary: Color,
-    val backgroundPrimaryComponent: Color,
-    val backgroundSecondaryComponent: Color,
-    val divider: Color,
-    val textPrimary: Color,
-    val textSecondary: Color,
-    val textPassive: Color,
-    val textWhite: Color,
-    val textPurple: Color,
-    val textRed: Color,
-    val neutral1: Color,
-    val neutral2: Color,
-    val neutral3: Color,
-    val neutral4: Color,
-    val neutral5: Color,
-    val neutral6: Color,
-    val neutral7: Color,
-    val neutral8: Color,
-    val neutral9: Color,
-    val neutral10: Color,
-    val yellow: Color,
-    val yellow1: Color,
-    val yellow2: Color,
-    val yellow3: Color,
-    val green: Color,
-    val greenLight1: Color,
-    val greenLight2: Color,
-    val red: Color,
-    val redLight1: Color,
-    val redLight2: Color,
-    val blue: Color,
-    val blueLight1: Color,
-    val blueLight2: Color,
-    val orange: Color,
-    val orangeLight1: Color,
-    val orangeLight2: Color,
-    val whitish: Color,
-    val white: Color,
-    val transparent: Color,
-    val purple: Color,
-    val black: Color
+    val textPrimary: Color,// Siyah
+    val black: Color,// Siyah
+    val background: Color, // Beyaz
+    val white: Color, // Beyaz
+    val divider: Color, // Gri Açık
+    val textSecondary: Color, // Gri Koyu
+    val buttonColor: Color, // Yeşil
+    val accentColor: Color, // Açık Mavi
+    val textLight: Color, // Beyaz (Karanlık arka planda)
+    val errorColor: Color, // Kırmızı (Hata durumu)
+    val warningColor: Color, // Turuncu (Uyarı durumu)
+    val successColor: Color, // Yeşil Açık (Başarı durumu)
+    val linkColor: Color, // Mavi (Bağlantılar için)
+    val disabledColor: Color, // Gri Açık (Devre dışı)
+    val shadowColor: Color, // Koyu Gri (Gölge)
+    val highlightColor: Color, // Açık Mavi (Vurgu)
+    val backgroundDark: Color, // Koyu Gri (Karanlık mod)
+    val inputFieldBackground: Color, // Giriş alanları
+    val overlayColor: Color // Siyah (Yarı saydam)
 ) {
     companion object {
         fun default(): TomColors = TomColors(
-            hadiPrimary = Color(0xFF763AC7),
-            hadiPrimaryLight = Color(0xFFA64FFF),
-            hadiLight = Color(0xFFE4DAF1),
-            backgroundPrimary = Color(0xFFF3F4F9),
-            backgroundSecondary = Color(0xFFF1F3F5),
-            backgroundPrimaryComponent = Color(0xFFFFFFFF),
-            backgroundSecondaryComponent = Color(0xFFF3F4F9),
-            divider = Color(0xFFECEDF0),
-            textPrimary = Color(0xFF343A40),
-            textSecondary = Color(0xFF70798C),
-            textPassive = Color(0xFFD0D3DA),
-            textWhite = Color(0xFFFFFFFF),
-            textPurple = Color(0xFF763AC7),
-            textRed = Color(0xFFFF3C2B),
-            neutral1 = Color(0xFFFFFFFF),
-            neutral2 = Color(0xFFF3F4F9),
-            neutral3 = Color(0xFFECEDF0),
-            neutral4 = Color(0xFFE5E7EB),
-            neutral5 = Color(0xFFD0D3DA),
-            neutral6 = Color(0xFFBFC4CD),
-            neutral7 = Color(0xFF70798C),
-            neutral8 = Color(0xFF343A40),
-            neutral9 = Color(0xFF191E25),
-            neutral10 = Color(0xFF15151A),
-            yellow = Color(0xFFFFCD2B),
-            yellow1 = Color(0xFFFFE07D),
-            yellow2 = Color(0xFFFFF2C8),
-            yellow3 = Color(0xFFFFFDF5),
-            green = Color(0xFF40B72C),
-            greenLight1 = Color(0xFFA9D998),
-            greenLight2 = Color(0xFFDEF1D7),
-            red = Color(0xFFFF3C2B),
-            redLight1 = Color(0xFFFF978E),
-            redLight2 = Color(0xFFFFDAD7),
-            blue = Color(0xFF1562F5),
-            blueLight1 = Color(0xFF83ADFF),
-            blueLight2 = Color(0xFFDBE7FF),
-            orange = Color(0xFFFF7C2F),
-            orangeLight1 = Color(0xFFFFA774),
-            orangeLight2 = Color(0xFFFFD6BF),
-            whitish = Color(0xFFF1F3F5),
-            white = Color(0xFFFFFFFF),
-            transparent = Color(0x00000000),
-            purple = Color(0xFF763AC7),
-            black = Color(0xFF000000)
+            textPrimary = Color(0xFF000000), // Siyah
+            black = Color(0xFF000000), // Siyah
+            background = Color(0xFFFFFFFF), // Beyaz
+            white = Color(0xFFFFFFFF), // Beyaz
+            divider = Color(0xFFE0E0E0), // Gri Açık
+            textSecondary = Color(0xFF7E7E7E), // Gri Koyu
+            buttonColor = Color(0xFF22D46D), // Yeşil
+            accentColor = Color(0xFF276EF1), // Açık Mavi
+            textLight = Color(0xFFFFFFFF), // Beyaz (Karanlık arka planda)
+            errorColor = Color(0xFFFF3D00),// Kırmızı (Hata durumu)
+            warningColor = Color(0xFFFFAA00), // Turuncu (Uyarı durumu)
+            successColor = Color(0xFF76FF03),// Yeşil Açık (Başarı durumu)
+            linkColor = Color(0xFF1E88E5), // Mavi (Bağlantılar için)
+            disabledColor = Color(0xFFB0BEC5), // Gri Açık (Devre dışı)
+            shadowColor = Color(0x40000000),// Koyu Gri (Gölge)
+            highlightColor = Color(0xFFBBDEFB), // Açık Mavi (Vurgu)
+            backgroundDark = Color(0xFF121212), // Koyu Gri (Karanlık mod)
+            inputFieldBackground = Color(0xFFF1F1F1), // Giriş alanları
+            overlayColor = Color(0x80000000) // Siyah (Yarı saydam)
+
         )
+        fun TomColors.toColorScheme(): ColorScheme {
+            return lightColorScheme(
+                primary = this.accentColor, // Ana renk
+                onPrimary = this.white, // Ana renk üzerindeki metin rengi
+                secondary = this.buttonColor, // İkincil renk
+                onSecondary = this.white, // İkincil renk üzerindeki metin rengi
+                background = this.background, // Arka plan rengi
+                onBackground = this.textPrimary, // Arka plan üzerindeki metin rengi
+                surface = this.white, // Yüzey rengi
+                onSurface = this.textPrimary, // Yüzey üzerindeki metin rengi
+                error = this.errorColor, // Hata rengi
+                onError = this.white, // Hata üzerindeki metin rengi
+                // İsterseniz daha fazla alan ekleyebilirsiniz:
+                // Örnek olarak
+                // outline = this.divider,
+                // onOutline = this.textSecondary
+            )
+        }
     }
 }

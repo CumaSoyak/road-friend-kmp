@@ -19,7 +19,7 @@ import roadfriend.app.uikit.compose.theme.TomTheme
 fun BaseScaffold(
     modifier: Modifier = Modifier,
     topBar: @Composable () -> Unit = {},
-    backgroundColor: Color = TomTheme.colors.backgroundSecondary,
+    backgroundColor: Color = TomTheme.colors.background,
     isTopCornerRadiusEnable: Boolean = false,
     content: @Composable (PaddingValues) -> Unit
 ) {

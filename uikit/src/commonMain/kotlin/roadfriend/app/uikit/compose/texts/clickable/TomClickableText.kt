@@ -22,7 +22,7 @@ fun TomClickableText(
     modifier: Modifier = Modifier,
     prefixText: String,
     allText: String,
-    prefixTextColor: Color = TomTheme.colors.textPurple,
+    prefixTextColor: Color = TomTheme.colors.disabledColor,
     allTextColor: Color = TomTheme.colors.textSecondary,
     textAlign: TextAlign = TextAlign.Start,
     isUnderline: Boolean = false,

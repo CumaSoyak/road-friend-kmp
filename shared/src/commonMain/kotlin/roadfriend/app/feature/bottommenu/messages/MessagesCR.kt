@@ -1,9 +1,9 @@
-package roadfriend.app.feature.home
+package roadfriend.app.feature.bottommenu.messages
 
 import roadfriend.app.core.base.TomUiEvent
 import roadfriend.app.core.base.TomUiState
 
-class HomeCR {
+class MessagesCR {
     data class State(
         val isPassbookActive: String? = null
     ) : TomUiState

@@ -1,13 +1,13 @@
 package roadfriend.app.uikit.compose.theme
 
 import androidx.compose.foundation.BorderStroke
+import androidx.compose.material3.ColorScheme
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.ProvideTextStyle
 import androidx.compose.material3.Shapes
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Typography
 import androidx.compose.material3.contentColorFor
-import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.ReadOnlyComposable
@@ -18,6 +18,7 @@ import androidx.compose.ui.graphics.Shape
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import roadfriend.app.uikit.compose.theme.color.TomColors
+import roadfriend.app.uikit.compose.theme.color.TomColors.Companion.toColorScheme
 import roadfriend.app.uikit.compose.theme.dimension.TomDimension
 import roadfriend.app.uikit.compose.theme.shape.TomShapes
 import roadfriend.app.uikit.compose.theme.typography.TomTypography
@@ -48,22 +49,23 @@ fun TomSurfacedContent(
 fun TomTheme(
     modifier: Modifier = Modifier,
     shape: Shape = MaterialTheme.shapes.medium,
-    color: Color = MaterialTheme.colorScheme.secondary,
-  //  shape: Shape = TomShapes.default().rectangle,
-  //  color: Color = TomColors.default().backgroundSecondary,
+    color: Color = TomColors.default().background,
     elevation: Dp = TomDimension.default().dp0,
     colors: TomColors = TomColors.default(),
+    toColorScheme: ColorScheme = TomColors.default().toColorScheme(),
     border: BorderStroke? = null,
     typography: TomTypography = TomTypography.default(),
+    customTypography: Typography = TomTypography.customTypography(),
     dimens: TomDimension = TomDimension.default(),
     shapes: TomShapes = TomShapes.default(),
+    customShapes: Shapes = TomShapes.customShapes,
     content: @Composable () -> Unit,
 ) {
     TomProvideResources(colors, typography, shapes, dimens) {
         MaterialTheme(
-            colorScheme = lightColorScheme(), // Customize the color scheme as needed
-            typography = Typography(), // Customize typography as needed
-            shapes = Shapes(), // Customize shapes as needed
+            colorScheme = toColorScheme, // Customize the color scheme as needed
+            typography = customTypography, // Customize typography as needed
+            shapes =customShapes, // Customize shapes as needed
         ) {
             TomSurfacedContent(
                 modifier = modifier,

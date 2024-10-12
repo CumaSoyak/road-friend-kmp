@@ -1,4 +1,4 @@
-package roadfriend.app.feature.home
+package roadfriend.app.feature.bottommenu.account
 
 /**
  * @Author: cuma soyak
@@ -6,15 +6,15 @@ package roadfriend.app.feature.home
  */
 import roadfriend.app.core.base.TBViewModel
 
-class HomeViewModel : TBViewModel<HomeCR.State, HomeCR.Event>() {
+class AccountViewModel : TBViewModel<AccountCR.State, AccountCR.Event>() {
 
-    override fun setInitialState(): HomeCR.State {
-        return HomeCR.State()
+    override fun setInitialState(): AccountCR.State {
+        return AccountCR.State()
     }
 
-    override fun onTriggerEvent(event: HomeCR.Event) {
+    override fun onTriggerEvent(event: AccountCR.Event) {
         when (event) {
-            HomeCR.Event.ReloadData -> {
+            AccountCR.Event.ReloadData -> {
                 println("HomeCR.Event.ReloadData")
 
                 setState {

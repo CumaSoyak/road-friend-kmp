@@ -414,7 +414,7 @@ object TomTexts {
         modifier: Modifier = Modifier,
         text: String? = null,
         textAnnotated: AnnotatedString? = null,
-        color: Color = TomTheme.colors.textSecondary,
+        color: Color = TomTheme.colors.textPrimary,
         fontSize: TextUnit = TomTheme.dimens.textSizeXxSmall,
         fontWeight: FontWeight? = FontWeight.Normal,
         fontFamily: FontFamily? = montserrat(),

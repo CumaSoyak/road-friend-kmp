@@ -13,7 +13,7 @@ import roadfriend.app.uikit.compose.theme.color.TomColors
 @Preview
 @Composable
 internal fun TomTextsPreview() {
-    TomTheme(color = TomColors.default().backgroundPrimary) {
+    TomTheme(color = TomColors.default().background) {
         Column(
             modifier = Modifier
                 .fillMaxWidth()
@@ -22,12 +22,12 @@ internal fun TomTextsPreview() {
             TomTexts.NumberN1(text = "NumberN1-Normal", fontWeight = FontWeight.Normal)
             TomTexts.NumberN1(
                 text = "NumberN1-Purple",
-                color = TomTheme.colors.textPurple
+                color = TomTheme.colors.buttonColor
             )
             TomTexts.NumberN1(text = "NumberN1-Medium", fontWeight = FontWeight.Medium)
             TomTexts.NumberN1(
                 text = "NumberN1-Blue",
-                color = TomTheme.colors.blue
+                color = TomTheme.colors.disabledColor
             )
             TomTexts.NumberN1(
                 text = "NumberN1",

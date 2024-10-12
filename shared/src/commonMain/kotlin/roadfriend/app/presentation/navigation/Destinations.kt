@@ -7,29 +7,18 @@ sealed class Destinations {
     object Onboarding
 
     @Serializable
-    object Username
-
-    @Serializable
     object Home
 
     @Serializable
-    data class AllTasks(val type: String)
+    object MyTrips
 
     @Serializable
-    data class AddTask(val taskId: Int = -1)
+    object PostTrip
 
     @Serializable
-    object Calendar
+    object Messages
 
     @Serializable
-    object Statistics
+    object Account
 
-    @Serializable
-    object AllStatistics
-
-    @Serializable
-    object Settings
-
-    @Serializable
-    data class TaskProgress(val taskId: Int)
 }

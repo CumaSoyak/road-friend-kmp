@@ -2,7 +2,6 @@ package roadfriend.app
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -30,12 +29,12 @@ fun RoadFriendApp(
                 val navController = rememberNavController()
 
                 StatusBarColors(
-                    statusBarColor = MaterialTheme.colorScheme.background,
-                    navBarColor = MaterialTheme.colorScheme.background,
+                    statusBarColor = TomTheme.colors.background,
+                    navBarColor = TomTheme.colors.background,
                 )
                 Surface(
                     modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colorScheme.background,
+                    color = TomTheme.colors.background,
                 ) {
                     MainScreen(
                         onBoardingCompleted = true,

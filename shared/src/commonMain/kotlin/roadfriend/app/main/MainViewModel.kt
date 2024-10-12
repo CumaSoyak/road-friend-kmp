@@ -2,7 +2,7 @@ package roadfriend.app.main
 
 
 import roadfriend.app.core.base.TBViewModel
-import roadfriend.app.feature.home.HomeCR
+import roadfriend.app.feature.bottommenu.home.HomeCR
 
 class MainViewModel : TBViewModel<HomeCR.State, HomeCR.Event>()  {
     override fun setInitialState(): HomeCR.State {

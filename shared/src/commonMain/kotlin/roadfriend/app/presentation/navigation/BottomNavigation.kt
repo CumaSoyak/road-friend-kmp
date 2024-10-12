@@ -20,75 +20,38 @@ enum class BottomNav(
     val route: Any,
 ) {
     Home(
-        label = "Home",
+        label = "Ara",
         selectedIcon = Res.drawable.home_filled,
         unselectedIcon = Res.drawable.home_outlined,
         route = Destinations.Home,
         index = 0,
     ),
     Calendar(
-        label = "Calendar",
+        label = "Yolculuklar",
         selectedIcon = Res.drawable.calendar_filled,
         unselectedIcon = Res.drawable.calendar_outlined,
-        route = Destinations.Calendar,
+        route = Destinations.MyTrips,
         index = 1,
     ),
-    Statistics(
-        label = "Statistics",
-        selectedIcon = Res.drawable.statistics_filled,
-        unselectedIcon = Res.drawable.statistics_outlined,
-        route = Destinations.Statistics,
-        index = 2,
-    ),
-    Settings(
-        label = "Settings",
-        selectedIcon = Res.drawable.settings_filled,
-        unselectedIcon = Res.drawable.settings_outlined,
-        route = Destinations.Settings,
-        index = 3,
-    ),
-}
-
-enum class NavRail(
-    val label: String,
-    val icon: DrawableResource,
-    val selectedIcon: DrawableResource,
-    val unselectedIcon: DrawableResource,
-    val route: Any,
-) {
-    Home(
-        label = "Home",
-        icon = Res.drawable.home_filled,
-        selectedIcon = Res.drawable.home_filled,
-        unselectedIcon = Res.drawable.home_outlined,
-        route = Destinations.Home,
-    ),
-    Calendar(
-        label = "Calendar",
-        icon = Res.drawable.calendar_filled,
-        selectedIcon = Res.drawable.calendar_filled,
-        unselectedIcon = Res.drawable.calendar_outlined,
-        route = Destinations.Calendar,
-    ),
     AddTask(
-        label = "Add Task",
-        icon = Res.drawable.add_filled,
+        label = "İlan ver",
         selectedIcon = Res.drawable.add_filled,
         unselectedIcon = Res.drawable.add_filled,
-        route = Destinations.AddTask(),
+        route = Destinations.PostTrip,
+        index = 2
     ),
     Statistics(
-        label = "Statistics",
-        icon = Res.drawable.statistics_filled,
+        label = "Mesajlar",
         selectedIcon = Res.drawable.statistics_filled,
         unselectedIcon = Res.drawable.statistics_outlined,
-        route = Destinations.Statistics,
+        route = Destinations.Messages,
+        index = 3,
     ),
     Settings(
-        label = "Settings",
-        icon = Res.drawable.settings_filled,
+        label = "Hesap",
         selectedIcon = Res.drawable.settings_filled,
         unselectedIcon = Res.drawable.settings_outlined,
-        route = Destinations.Settings,
+        route = Destinations.Account,
+        index = 4,
     ),
 }

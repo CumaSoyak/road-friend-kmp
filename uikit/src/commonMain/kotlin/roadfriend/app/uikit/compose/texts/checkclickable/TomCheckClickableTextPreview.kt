@@ -34,7 +34,7 @@ internal fun TomCheckClickableTextPreview() {
             var checked3 by remember { mutableStateOf(false) }
             TomCheckClickableText(
                 modifier = Modifier
-                    .background(TomTheme.colors.white)
+                    .background(TomTheme.colors.buttonColor)
                     .padding(TomTheme.dimens.dp4),
                 modifierCheckBox = Modifier.padding(
                     top = TomTheme.dimens.dp2,

@@ -1,5 +1,6 @@
 package roadfriend.app.uikit.compose.theme.typography
 
+import androidx.compose.material3.Typography
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.Immutable
 import androidx.compose.ui.text.TextStyle
@@ -190,6 +191,21 @@ data class TomTypography(
                 lineHeight = TomDimension.default().lineHeightXxSmall,
                 color = TomColors.default().textSecondary
             )
+        )
+
+        @Composable
+        fun customTypography() = Typography(
+            displayLarge = default().titleH1SemiBold,       // H1 başlık stili
+            displayMedium = default().titleH2SemiBold,      // H2 başlık stili
+            displaySmall = default().titleH3SemiBold,       // H3 başlık stili
+            headlineLarge = default().titleH4SemiBold,      // H4 başlık stili
+            headlineMedium = default().titleH5SemiBold,     // H5 başlık stili
+            bodyLarge = default().bodyRegular,              // Body1 Regular
+            bodyMedium = default().bodyMedium,              // Body2 Medium
+          //  bodySmall = default().bodySmall,                // Body Small
+          //  labelLarge = default().labelLarge,              // Label Large
+          //  labelMedium = default().labelMedium,            // Label Medium
+            labelSmall = default().captionRegular           // Caption Regular (Label Small)
         )
     }
 }
